@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lmodroid_lancelot.mk
+    $(LOCAL_DIR)/afterlife_lancelot.mk
 
 COMMON_LUNCH_CHOICES := \
-    lmodroid_lancelot-user \
-    lmodroid_lancelot-userdebug \
-    lmodroid_lancelot-eng
+    afterlife_lancelot-user \
+    afterlife_lancelot-userdebug \
+    afterlife_lancelot-eng
