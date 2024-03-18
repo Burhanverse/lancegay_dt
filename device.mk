@@ -281,8 +281,7 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayLancelot \
     TelephonyOverlayLancelot \
     TetheringConfigOverlayLancelot \
-    WifiOverlayLancelot \
-    UpdaterOverlayLancelot
+    WifiOverlayLancelot
 
 # Power
 PRODUCT_PACKAGES += \
@@ -506,16 +505,6 @@ ifneq ($(wildcard packages/apps/MotoCalendar),)
 PRODUCT_PACKAGES += \
     MotoCalendar
 endif
-
-# MiCalculator
-ifneq ($(wildcard packages/apps/MiCalculator),)
-PRODUCT_PACKAGES += \
-    MiCalculator
-endif
-
-# Updater
-PRODUCT_PRODUCT_PROPERTIES += \
-    lmodroid.updater.uri=https://raw.githubusercontent.com/burhancodes/OTA/main/lancelot.json
 
 # Lineage Health
 ifneq ($(wildcard hardware/*/interfaces/health),)

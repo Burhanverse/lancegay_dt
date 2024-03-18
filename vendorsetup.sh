@@ -11,8 +11,6 @@ git clone --depth 1 https://github.com/burhancodes/package_apps_MotoClock packag
 
 git clone --depth 1 https://github.com/burhancodes/packages_apps_MotoCalendar packages/apps/MotoCalendar
 
-git clone --depth 1 https://github.com/burhancodes/package_apps_micalculator packages/apps/MiCalculator
-
 git clone --depth 1 https://github.com/burhancodes/packages_apps_GoogleCamera_8.1 packages/apps/GoogleCamera_8.1
 
 git clone --depth 1 https://github.com/burhancodes/packages_apps_CustomPackageInstaller packages/apps/CustomPackageInstaller
