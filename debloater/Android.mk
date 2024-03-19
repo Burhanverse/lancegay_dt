@@ -24,6 +24,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     yetCalc \
     Gallery2 \
     Jelly \
+    JellyFish \
     Music \
     MusicPlayerGO \
     MaestroPrebuilt \
@@ -31,6 +32,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Maps \
     Gmail2 \
     PersonalSafety \
+    Phonograph \
     Photos \
     PrebuiltDeskClockGoogle \
     Recorder \

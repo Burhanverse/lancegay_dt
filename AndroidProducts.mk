@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/spark_lancelot.mk
+    $(LOCAL_DIR)/bliss_lancelot.mk
 
 COMMON_LUNCH_CHOICES := \
-    spark_lancelot-user \
-    spark_lancelot-userdebug \
-    spark_lancelot-eng
+    bliss_lancelot-user \
+    bliss_lancelot-userdebug \
+    bliss_lancelot-eng
