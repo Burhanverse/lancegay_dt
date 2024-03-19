@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_lancelot.mk
+    $(LOCAL_DIR)/spark_lancelot.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_lancelot-user \
-    aosp_lancelot-userdebug \
-    aosp_lancelot-eng
+    spark_lancelot-user \
+    spark_lancelot-userdebug \
+    spark_lancelot-eng

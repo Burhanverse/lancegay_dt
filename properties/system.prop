@@ -1,6 +1,11 @@
 #
 # system.prop for mt6768
 #
+# Spark-OS
+ro.spark.device.name=lancelot
+ro.spark.group.url=https://t.me/burhancodes
+ro.spark.maintainer=Aqua
+ro.spark.maintainer.username=burhanverse
 
 # Audio
 ro.audio.silent=0
