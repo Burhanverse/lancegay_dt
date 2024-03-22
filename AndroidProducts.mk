@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_lancelot.mk
+    $(LOCAL_DIR)/lineage_lancelot.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_lancelot-user \
-    bliss_lancelot-userdebug \
-    bliss_lancelot-eng
+    lineage_lancelot-user \
+    lineage_lancelot-userdebug \
+    lineage_lancelot-eng

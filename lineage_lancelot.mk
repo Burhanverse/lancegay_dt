@@ -11,18 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/xiaomi/lancelot/device.mk)
 
-# Inherit some common spark stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+# Inherit some common lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# stuff
+# Inherit some common stuff
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_SUPPORTS_QUICK_TAP  := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_INCLUDE_PIXEL_CHARGER := true
-TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := false
 TARGET_BOOT_ANIMATION_RES := 1080
-BLISS_BUILDTYPE := OFFICIAL
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := bliss_lancelot
+PRODUCT_NAME := lineage_lancelot
 PRODUCT_DEVICE := lancelot
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
