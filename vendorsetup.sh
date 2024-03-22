@@ -1,10 +1,3 @@
-export KBUILD_BUILD_USER=Burhanverse
-export KBUILD_BUILD_HOST=burhancodes
-export BUILD_USERNAME=Burhanverse
-export BUILD_HOSTNAME=burhancodes
-export TARGET_KERNEL_BUILD_USER=Burhanverse
-export TARGET_KERNEL_BUILD_HOST=burhancodes
-
 git clone --depth 1 https://github.com/burhancodes/package_apps_MyUIWidgets packages/apps/MyUIWidgets
 
 git clone --depth 1 https://github.com/burhancodes/package_apps_MotoClock packages/apps/MotoClock
@@ -34,9 +27,13 @@ git clone --depth 1 https://gitlab.com/crdroidandroid/android_prebuilts_clang_ho
 echo -e "Dependencies cloned successfully!"
 
 echo -e "Applying patches..."
-rm -rf frameworks/av
-git clone --depth 1 https://github.com/Burhanverse/platform_frameworks_av -b typhoon frameworks/av
+# Media: Import codecs/omx changes from t-alps-q0.mp1-V9.122.1
+git -C "frameworks/av" am <<<"$(curl -sL "https://github.com/ArrowOS/android_frameworks_av/commit/1fb1c48309cf01deb9e3f8253cb7fa5961c25595.patch")"
 
-rm -rf frameworks/native
-git clone --depth 1 https://github.com/Burhanverse/platform_frameworks_native -b typhoon frameworks/native
+# stagefright: remove HW_TEXTRUE usage from SurfaceMediaSource
+git -C "frameworks/av" am <<<"$(curl -sL "https://github.com/ArrowOS/android_frameworks_av/commit/a727c1f68fd30c8e6a4068db9dc26670d4a78f6c.patch")"
+
+# REThreaded: Use gen- and delete- textures on all render engines
+git -C "frameworks/native" am <<<"$(curl -sL "https://github.com/ArrowOS/android_frameworks_native/commit/1e483eea5cf3b4972939a313652aebac42a1561c.patch")"
+
 echo -e "Patch applied successfully."
